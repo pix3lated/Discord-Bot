@@ -26,8 +26,8 @@ async def on_message(message):
         msg1 = 'hello'.format(message)
         await client.send_message(message.channel, msg1)
     if message.content.startswith('!balance'):
-        lol = message.author
-        await client.send_message(message.channel, )
+        lol = message.author.id
+        await client.send_message(message.channel, lol)
 
 @client.event
 async def on_ready():
